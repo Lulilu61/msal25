@@ -5,9 +5,9 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties("urbanisatiosi.clairprev")
+@ConfigurationProperties("urbanisationsi.clairprev")
 @RefreshScope
-public class ApplicationPropertieqConfiguration {
+public class ApplicationPropertiesConfiguration {
 	
 	private int limiteNombreAssure;
 

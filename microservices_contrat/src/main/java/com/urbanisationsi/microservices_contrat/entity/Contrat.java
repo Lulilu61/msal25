@@ -1,4 +1,4 @@
-package com.urbanisationsi.microservices_contrat_mongoDB_correction.entity;
+package com.urbanisationsi.microservices_contrat.entity;
 
 import java.util.Date;
 

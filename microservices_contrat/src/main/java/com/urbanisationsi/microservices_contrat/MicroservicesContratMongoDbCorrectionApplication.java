@@ -1,4 +1,4 @@
-package com.urbanisationsi.microservices_contrat_mongoDB_correction;
+package com.urbanisationsi.microservices_contrat;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
