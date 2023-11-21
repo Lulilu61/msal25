@@ -15,15 +15,15 @@ public class Assure {
 	private Integer id;
 	
 //	@Length(min=3, max=15, message = "Le nombre de caractères du nom de la personne doit être compris entre 3 et 15 caractères.")
-//	private String nom;
-//	
-//	private String prenom;
-//	
-//	private Long numeroPersonne;
+	private String nom;
+	
+	private String prenom;
+	
+	private int numeroPersonne;
 	
 	private String dossierMedical;
 	
-	private Long numeroAssure;
+	private int numeroAssure;
 
 	public Integer getId() {
 		return id;
@@ -41,39 +41,37 @@ public class Assure {
 		this.dossierMedical = dossierMedical;
 	}
 
-	public Long getNumeroAssure() {
+	public int getNumeroAssure() {
 		return numeroAssure;
 	}
 
-	public void setNumeroAssure(Long numeroAssure) {
+	public void setNumeroAssure(int numeroAssure) {
 		this.numeroAssure = numeroAssure;
 	}
 
-//	public String getNom() {
-//		return nom;
-//	}
-//
-//	public void setNom(String nom) {
-//		this.nom = nom;
-//	}
-//
-//	public String getPrenom() {
-//		return prenom;
-//	}
-//
-//	public void setPrenom(String prenom) {
-//		this.prenom = prenom;
-//	}
-//
-//	public Long getNumeroPersonne() {
-//		return numeroPersonne;
-//	}
-//
-//	public void setNumeroPersonne(Long numeroPersonne) {
-//		this.numeroPersonne = numeroPersonne;
-//	}
-	
-	
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getPrenom() {
+		return prenom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	public int getNumeroPersonne() {
+		return numeroPersonne;
+	}
+
+	public void setNumeroPersonne(int i) {
+		this.numeroPersonne = i;
+	}
 	
 	
 
