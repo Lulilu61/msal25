@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.urbanisationsi.orchestrateur.dto.AssureDTO;
 
 
-@FeignClient(name="msassure"/*, url="localhost:9999/previt"*/)
+@FeignClient(name="zuul-server"/*, url="localhost:9999/previt"*/)
 @RibbonClient(name="msassure")
 public interface AssureProxy {
 
-	@GetMapping(path="/previt/chercherNomPrenom/{nom}/{prenom}")
+	@GetMapping(path="/msassure/previt/chercherNomPrenom/{nom}/{prenom}")
 	public @ResponseBody Iterable<AssureDTO> getByNomPrenom(@PathVariable String nom, @PathVariable String prenom);
 	
-	@GetMapping(path="/previt/listerAssure")
+	@GetMapping(path="/msassure/previt/listerAssures")
 	public @ResponseBody Iterable<AssureDTO> getAllAssures();
 	
 

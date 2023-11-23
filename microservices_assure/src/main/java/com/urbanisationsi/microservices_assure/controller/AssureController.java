@@ -45,12 +45,12 @@ public class AssureController {
 		}
 	}
 
-//	@GetMapping(path="/listerAssure")
+//	@GetMapping(path="/listerAssures")
 //	public @ResponseBody Iterable<Assure> getAllAssures(){
 //	return assureRepository.findAll();
 //	}
 
-	@GetMapping(path="/listerAssure")
+	@GetMapping(path="/listerAssures")
 	public @ResponseBody Iterable<Assure> getAllAssures(){
 	List<Assure> assureList = (List<Assure>) assureRepository.findAll();
 	return assureList.subList(0, appProperties.getLimiteNombreAssure());
